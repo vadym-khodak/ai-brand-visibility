@@ -26,18 +26,18 @@ SCHEMA = {"name": "intent", "strict": True, "schema": {"type": "object", "proper
 def run():
     queries = pd.read_csv("data/queries.csv")
     done = {(c["query_id"], c["coder"]) for c in audit.load_jsonl(OUT)}
+    pending = [(q, coder) for q in queries.itertuples() for coder in CODERS if (q.query_id, coder) not in done]
+    if not pending:
+        return
     with audit.make_client() as client, OUT.open("a", encoding="utf-8") as out:
-        for q in queries.itertuples():
-            for coder in CODERS:
-                if (q.query_id, coder) in done:
-                    continue
-                body = audit.post_chat(client, {
-                    "model": coder, "temperature": 0, "max_tokens": 500,
-                    "messages": [{"role": "system", "content": PROMPT}, {"role": "user", "content": q.query_en}],
-                    "response_format": {"type": "json_schema", "json_schema": SCHEMA}, "usage": {"include": True}})
-                label = json.loads(body["choices"][0]["message"]["content"])["intent"]
-                out.write(json.dumps({"query_id": q.query_id, "coder": coder, "intent": label,
-                                      "cost": (body.get("usage") or {}).get("cost")}) + "\n")
+        for q, coder in pending:
+            body = audit.post_chat(client, {
+                "model": coder, "temperature": 0, "max_tokens": 500,
+                "messages": [{"role": "system", "content": PROMPT}, {"role": "user", "content": q.query_en}],
+                "response_format": {"type": "json_schema", "json_schema": SCHEMA}, "usage": {"include": True}})
+            label = json.loads(body["choices"][0]["message"]["content"])["intent"]
+            out.write(json.dumps({"query_id": q.query_id, "coder": coder, "intent": label,
+                                  "cost": (body.get("usage") or {}).get("cost")}) + "\n")
 
 
 def report():

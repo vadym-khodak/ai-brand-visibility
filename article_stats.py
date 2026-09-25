@@ -1,4 +1,5 @@
-"""Відтворює статистику для доопрацювання статті: ДІ табл. 3–4, мовний розрив (рис. 3) і GEE-модель."""
+"""Основні результати статті: видимість брендів з довірчими інтервалами, намір, мовні розриви, GEE, джерела,
+ринкові показники, контрольні збори і рисунки 1–4."""
 
 import warnings
 
@@ -30,8 +31,8 @@ def fmt(x):
     return f"{x:.2f}".replace(".", ",")
 
 
-def table3(panel, full, records, judgements):
-    """Табл. 3: MR і FP з 95 % ДІ, ранг серед усіх брендів, MR за мовами, розкид за системами, тональність.
+def brand_visibility_table(panel, full, records, judgements):
+    """Видимість брендів (табл. 3 статті): MR і FP з 95 % ДІ, ранг серед усіх брендів, MR за мовами, розкид за системами, тональність.
 
     FP і ранг рахуються серед усіх брендів відповіді (відстежуваних і названих LLM-суддею), а не лише 42.
     """
@@ -52,17 +53,17 @@ def table3(panel, full, records, judgements):
                          "rank": ranks.get(brand, np.nan), "mr_uk": by_lang.loc[brand, "uk"], "mr_en": by_lang.loc[brand, "en"],
                          "sys_min": by_system.loc[brand].min(), "sys_max": by_system.loc[brand].max(), "tone": tone.get(brand, np.nan)})
     table = pd.DataFrame(rows).set_index("brand")
-    table.round(3).to_csv("data/table3_ci.csv")
+    table.round(3).to_csv("data/brand_visibility_ci.csv")
     return table
 
 
-TABLE3_INDUSTRIES = {"bank": "Банки", "ecom": "Інтернет-торгівля", "pharma": "Аптеки", "post": "Пошта і логістика", "food": "Доставка їжі"}
+INDUSTRY_TITLES = {"bank": "Банки", "ecom": "Інтернет-торгівля", "pharma": "Аптеки", "post": "Пошта і логістика", "food": "Доставка їжі"}
 
 
-def table3_markdown(table):
+def brand_visibility_markdown(table):
     lines = ["| Галузь | Бренд | MR (95 % ДІ) | FP (95 % ДІ) | Ранг | MR uk | MR en | MR min–max за системами | Тональність |",
              "|---|---|---|---|---|---|---|---|---|"]
-    for industry, label in TABLE3_INDUSTRIES.items():
+    for industry, label in INDUSTRY_TITLES.items():
         part = table[table.industry == industry].sort_values("mr_est", ascending=False)
         for i, (brand, r) in enumerate(part.iterrows()):
             lines.append(f"| {label if i == 0 else ''} | {brand} | {fmt(r.mr_est)} ({fmt(r.mr_lo)}–{fmt(r.mr_hi)}) | "
@@ -71,7 +72,7 @@ def table3_markdown(table):
     return "\n".join(lines)
 
 
-def table4(panel):
+def bank_intent_table(panel):
     banks = panel[panel.industry == "bank"]
     parts, draws = [], {}
     for i, intent in enumerate(INTENTS):
@@ -113,15 +114,44 @@ def plot_gaps(gaps, path):
     plt.savefig(path, dpi=300)
 
 
+
+SYSTEM_LABELS = {"gpt-5.6-sol": "GPT", "claude-sonnet-5": "Claude", "gemini-3.8-flash": "Gemini",
+                 "deepseek-v4-pro-0813": "DeepSeek", "sonar-pro +web": "Sonar (пошук)"}
+
+
+def bank_heatmap(records, path="figures/fig1_banks_heatmap.png"):
+    """Рис. 1: згадуваність банків за системами, україномовні запити."""
+    import seaborn as sns
+
+    responses = audit.responses_frame(records)
+    banks = [r for r in records if r["industry"] == "bank"]
+    mentions = audit.mentions_frame(banks, INDUSTRIES["bank"]["brands"])
+    uk = responses[(responses.industry == "bank") & (responses.lang == "uk")]
+    rates = audit.visibility_table(uk, mentions[mentions.lang == "uk"])
+    table = (rates.pivot(index="brand", columns="model_label", values="mention_rate").fillna(0)
+             .rename(columns=SYSTEM_LABELS)[list(SYSTEM_LABELS.values())])
+    table = table.loc[table.mean(axis=1).sort_values(ascending=False).index]
+    plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10})
+    fig, ax = plt.subplots(figsize=(7.5, 6))
+    sns.heatmap(table, annot=True, fmt=".2f", cmap="Greys", vmin=0, vmax=1, ax=ax,
+                cbar_kws={"label": "Частка відповідей зі згадкою"}, linewidths=.5, linecolor="white")
+    ax.set(xlabel="", ylabel="")
+    plt.xticks(rotation=0)
+    plt.tight_layout()
+    plt.savefig(path, dpi=300)
+    plt.close()
+    return table
+
 def main():
     records = audit.load_jsonl("data/full_responses.jsonl")
     judgements = audit.load_jsonl("data/full_judgements.jsonl")
     panel = inf.full_panel(records)
+    bank_heatmap(records)
     full = fullset.full_frame(records, judgements)
     full.to_pickle("data/full_frame.pkl")
-    Path("data/table3.md").write_text(table3_markdown(table3(panel, full, records, judgements)), encoding="utf-8")
-    t4, draws = table4(panel)
-    t4.to_csv("data/table4_ci.csv")
+    Path("data/brand_visibility_table.md").write_text(brand_visibility_markdown(brand_visibility_table(panel, full, records, judgements)), encoding="utf-8")
+    t4, draws = bank_intent_table(panel)
+    t4.to_csv("data/bank_intent_ci.csv")
     for brand in ["Райффайзен Банк", "Креді Агріколь", "OTP Bank", "УкрСиббанк"]:
         print(brand, "TRUST − PRICE", intent_difference(draws, brand, "TRUST", "PRICE"))
     for brand in ["monobank", "А-Банк"]:
@@ -343,7 +373,7 @@ def market_comparison():
         banks.append({"industry": "bank", "brand": brand, "net_assets": float(a[32]), "depositors": int(d[2]), "deposits": float(d[4])})
     banks = pd.DataFrame(banks)
     traffic = pd.read_csv("data/market/traffic_retailersua_2025-09.csv")
-    table3 = pd.read_csv("data/table3_ci.csv", index_col=0)
+    visibility = pd.read_csv("data/brand_visibility_ci.csv", index_col=0)
     google = [r for r in audit.load_jsonl("data/google_responses.jsonl") if r["aio_present"] and r["lang"] == "uk"]
 
     def aio_rate(industry, brand):
@@ -352,7 +382,7 @@ def market_comparison():
                         for r in part])
     frames = []
     for df, measures in [(banks, ["depositors", "deposits", "net_assets"]), (traffic, ["visits_mln"])]:
-        df = df.assign(mr=df.brand.map(table3.mr_est), fp=df.brand.map(table3.fp_est),
+        df = df.assign(mr=df.brand.map(visibility.mr_est), fp=df.brand.map(visibility.fp_est),
                        aio=[aio_rate(i, b) for i, b in zip(df.industry, df.brand)])
         for industry, g in df.groupby("industry"):
             for m in measures:

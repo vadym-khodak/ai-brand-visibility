@@ -1,4 +1,5 @@
-"""Раунд 3 рецензії: стійкість мовної асиметрії до відбору брендів і альтернативного модератора, розбіжності між системами."""
+"""Перевірки стійкості: мовна асиметрія (відбір брендів, латинське написання, лише рекомендації), розбіжності між системами,
+чутливість банківських розривів до складу запитів, мінімальний виявний ефект, повнота словника."""
 
 import re
 import warnings
@@ -91,7 +92,8 @@ def bank_rank_gaps(panel, queries_out=(), draws=2000, seed=5):
     from scipy.stats import spearmanr
 
     banks = panel[(panel.industry == "bank") & ~panel.query_id.isin(queries_out)]
-    depositors = pd.read_csv("data/market/banks_nbu_2026-08-01.csv").set_index("brand").depositors
+    market = pd.read_csv("data/market/market_vs_visibility_all.csv")
+    depositors = market[market.industry == "bank"].set_index("brand").depositors
     rates, samples = inf.bootstrap_rates(banks, "mentioned", ["brand"], draws=draws, seed=seed)
     ranks = pd.DataFrame(samples, columns=list(rates.index)).rank(axis=1, ascending=False)
     out = pd.DataFrame({"mr": rates.est, "r_mr": rates.est.rank(ascending=False),
