@@ -115,6 +115,49 @@ def oschadbank_layers(panel):
     print(by_query.round(2).to_string())
 
 
+def variance_components(panel):
+    """Для кожного бренду: дисперсія відповіді всередині клітинки «запит × система» (між повторами й мовними версіями)
+    і дисперсія справжньої частки між запитами — окремо для однієї системи і для середнього за п'ятьма системами."""
+    cells = panel.groupby(["industry", "brand", "model_label", "query_id"]).mentioned.agg(["sum", "size"]).reset_index()
+    n = cells["size"]
+    cells["p"] = cells["sum"] / n
+    cells["w"] = cells["sum"] * (n - cells["sum"]) / (n * (n - 1))
+    rows = []
+    for (industry, brand), g in cells.groupby(["industry", "brand"]):
+        per_system = [(sg.w.mean(), max(sg.p.var(ddof=1) - (sg.w / n[sg.index]).mean(), 0)) for _, sg in g.groupby("model_label")]
+        pooled = g.groupby("query_id").agg(p=("p", "mean"), noise=("w", lambda w: (w / n[w.index]).mean() / g.model_label.nunique()))
+        rows.append({"industry": industry, "brand": brand,
+                     "within": np.mean([w for w, _ in per_system]), "between_1": np.mean([b for _, b in per_system]),
+                     "between_all": max(pooled.p.var(ddof=1) - pooled.noise.mean(), 0)})
+    return pd.DataFrame(rows)
+
+
+def mde_table(panel, z=1.96 + 0.84):
+    """Мінімальний виявний ефект (α = 0,05, потужність 80 %) зміни MR бренду між двома хвилями.
+
+    Фіксований набір запитів: різниця містить лише шум між повторами. Новий набір запитів у кожній хвилі:
+    додається дисперсія між запитами. Q — кількість запитів (обидві мовні версії запиту — одна одиниця), R — відповідей
+    на запит у кожній системі (повтори × мовні версії), S — систем.
+    """
+    comp = variance_components(panel)
+    out = []
+    for quantile in (0.5, 0.75):
+        within, b1, ball = comp[["within", "between_1", "between_all"]].quantile(quantile)
+        for q in (10, 20, 40):
+            for r in (2, 6, 10):
+                for systems, between in ((1, b1), (5, ball)):
+                    fixed = z * np.sqrt(2 * within / (q * r * systems))
+                    fresh = z * np.sqrt(2 * (between / q + within / (q * r * systems)))
+                    half = 1.96 * np.sqrt(between / q + within / (q * r * systems))
+                    out.append({"brand_quantile": quantile, "queries": q, "repeats": r, "systems": systems,
+                                "mde_fixed": fixed, "mde_new_queries": fresh, "ci_half_width": half})
+    table = pd.DataFrame(out)
+    table.round(3).to_csv("data/mde_table.csv", index=False)
+    print(comp[["within", "between_1", "between_all"]].describe().round(3).to_string())
+    print(table[table.brand_quantile == 0.5].round(3).to_string(index=False))
+    return comp, table
+
+
 def main():
     records = audit.load_jsonl("data/full_responses.jsonl")
     panel = inf.full_panel(records)
@@ -125,6 +168,7 @@ def main():
     bank_rank_gaps(panel)
     bank_rank_gaps(panel, DIGITAL_BANK_QUERIES)
     oschadbank_layers(panel)
+    mde_table(panel)
 
 
 if __name__ == "__main__":
