@@ -83,6 +83,38 @@ def system_heterogeneity(panel, draws=4000, seed=31):
     return table
 
 
+DIGITAL_BANK_QUERIES = ["bank-03", "bank-09", "bank-11", "bank-16"]
+
+
+def bank_rank_gaps(panel, queries_out=(), draws=2000, seed=5):
+    """Ранг за кількістю вкладників проти 95 % бутстреп-інтервалу рангу за згадуваністю (без заданих запитів)."""
+    from scipy.stats import spearmanr
+
+    banks = panel[(panel.industry == "bank") & ~panel.query_id.isin(queries_out)]
+    depositors = pd.read_csv("data/market/banks_nbu_2026-08-01.csv").set_index("brand").depositors
+    rates, samples = inf.bootstrap_rates(banks, "mentioned", ["brand"], draws=draws, seed=seed)
+    ranks = pd.DataFrame(samples, columns=list(rates.index)).rank(axis=1, ascending=False)
+    out = pd.DataFrame({"mr": rates.est, "r_mr": rates.est.rank(ascending=False),
+                        "r_lo": ranks.quantile(0.025), "r_hi": ranks.quantile(0.975)})
+    out["r_market"] = depositors.reindex(out.index).rank(ascending=False)
+    out["robust"] = (out.r_market < out.r_lo) | (out.r_market > out.r_hi)
+    print(f"--- без {list(queries_out)}: ρ = {spearmanr(out.mr, depositors.reindex(out.index)).statistic:.2f}")
+    print(out.sort_values("r_market").round(2).to_string())
+    return out
+
+
+def oschadbank_layers(panel):
+    """Згадуваність банків за шарами: моделі без пошуку, Sonar, Google AI Overviews (україномовні запити)."""
+    banks = panel[panel.industry == "bank"]
+    google = [r for r in audit.load_jsonl("data/google_responses.jsonl") if r["aio_present"] and r["industry"] == "bank"]
+    aio = inf.brand_panel(google, "bank")
+    table = pd.concat([banks.groupby(["web_search", "brand"]).mentioned.mean().unstack(0).set_axis(["LLM без пошуку", "Sonar"], axis=1),
+                       aio[aio.lang == "uk"].groupby("brand").mentioned.mean().rename("AIO uk")], axis=1)
+    print(pd.concat([table.round(2), table.rank(ascending=False).add_suffix(" ранг")], axis=1).to_string())
+    by_query = banks[banks.brand == "Ощадбанк"].groupby(["query_id", "intent"]).mentioned.mean().sort_values()
+    print(by_query.round(2).to_string())
+
+
 def main():
     records = audit.load_jsonl("data/full_responses.jsonl")
     panel = inf.full_panel(records)
@@ -90,6 +122,9 @@ def main():
     print(latin.round(2).sort_values().to_string())
     asymmetry(panel, latin)
     system_heterogeneity(panel)
+    bank_rank_gaps(panel)
+    bank_rank_gaps(panel, DIGITAL_BANK_QUERIES)
+    oschadbank_layers(panel)
 
 
 if __name__ == "__main__":
