@@ -11,7 +11,7 @@ from statsmodels.stats.multitest import multipletests
 
 import audit
 import inference as inf
-from design import INDUSTRIES
+from design import FOREIGN_PARENTS, INDUSTRIES
 
 warnings.filterwarnings("ignore")
 POST_PILOT_BANKS = ["Укрексімбанк", "Креді Агріколь", "Кредобанк"]
@@ -158,6 +158,41 @@ def mde_table(panel, z=1.96 + 0.84):
     return comp, table
 
 
+def measurement_checks(records, judgements):
+    """Повнота словника відносно LLM-судді за мовами, частка не знайдених у тексті назв поза словником
+    і мовний ефект лише для прямих рекомендацій (за суддею)."""
+    by_key = {tuple(j["key"]): j for j in judgements}
+    rows, unlocated, other = [], {"uk": 0, "en": 0}, {"uk": 0, "en": 0}
+    for r in records:
+        judge = by_key.get(audit.task_key(r))
+        if not judge:
+            continue
+        patterns = INDUSTRIES[r["industry"]]["brands"]
+        found = {h["brand"] for h in audit.find_mentions(r["response_text"], patterns)}
+        named = {}
+        for b in judge["brands"]:
+            tracked = audit.match_brand(b["name"], patterns)
+            if tracked:
+                named[tracked] = named.get(tracked, False) or bool(b.get("recommended"))
+            else:
+                other[r["lang"]] += 1
+                unlocated[r["lang"]] += r["response_text"].lower().find(b["name"].lower()) < 0
+        for brand in patterns:
+            rows.append({"lang": r["lang"], "brand": brand, "query_id": r["query_id"], "model_label": audit.model_label(r),
+                         "dictionary": brand in found, "judge": brand in named, "recommended": int(named.get(brand, False))})
+    d = pd.DataFrame(rows)
+    for lang, g in d.groupby("lang"):
+        both = (g.dictionary & g.judge).sum()
+        print(lang, "повнота словника:", round(both / g.judge.sum(), 3), "повнота судді:", round(both / g.dictionary.sum(), 3),
+              "назви поза словником, не знайдені в тексті:", round(unlocated[lang] / other[lang], 3),
+              "частка рекомендацій серед згадок:", round(g[g.dictionary].recommended.mean(), 3))
+    d["en"] = d.lang.eq("en").astype(int)
+    d["foreign"] = d.brand.isin(FOREIGN_PARENTS).astype(int)
+    result = smf.gee("recommended ~ C(brand) + C(model_label) + en + en:foreign", groups="query_id", data=d,
+                     family=sm.families.Binomial(), cov_struct=sm.cov_struct.Independence()).fit()
+    print("--- лише прямі рекомендації\n", inf.odds_ratios(result, ["en", "en:foreign"]).round(3).to_string())
+
+
 def main():
     records = audit.load_jsonl("data/full_responses.jsonl")
     panel = inf.full_panel(records)
@@ -169,6 +204,7 @@ def main():
     bank_rank_gaps(panel, DIGITAL_BANK_QUERIES)
     oschadbank_layers(panel)
     mde_table(panel)
+    measurement_checks(records, audit.load_jsonl("data/full_judgements.jsonl"))
 
 
 if __name__ == "__main__":
