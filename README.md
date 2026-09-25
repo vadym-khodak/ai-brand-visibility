@@ -80,7 +80,7 @@ python validate_clarify.py full-report
 
 | Що | Ліцензія | Файл |
 |---|---|---|
-| Код | MIT | `LICENSE` — англійський оригінал і український переклад |
+| Код | MIT | `LICENSE` — англійський оригінал; `LICENSE.uk` — український переклад |
 | Дані, створені в межах дослідження (запити, словник, розмітка, зведені набори, обчислені таблиці) | CC BY 4.0 | `data/LICENSE` — сфера дії двома мовами, офіційний український переклад і англійський оригінал юридичного тексту |
 
 - Тексти відповідей генеративних систем ліцензуються лише в межах прав автора; їх використання регулюють також умови відповідних сервісів.
@@ -106,4 +106,4 @@ What is included:
 
 `revision_stats.py` and `round3_stats.py` reproduce all numbers, tables and figures in the article. The analysis needs no API key.
 
-Licenses: code under MIT (`LICENSE`, English original with a Ukrainian translation); research-generated data under CC BY 4.0 (`data/LICENSE`, scope in both languages, the official Ukrainian translation and the English legal code). Model outputs are subject to their providers' terms; market data belong to their sources.
+Licenses: code under MIT (`LICENSE`; Ukrainian translation in `LICENSE.uk`); research-generated data under CC BY 4.0 (`data/LICENSE`, scope in both languages, the official Ukrainian translation and the English legal code). Model outputs are subject to their providers' terms; market data belong to their sources.
