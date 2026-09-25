@@ -8,6 +8,7 @@ authors:
     given-names: Vadym
     affiliation: Cherkasy State Technological University
     orcid: "https://orcid.org/0009-0008-9469-3341"
+doi: "10.5281/zenodo.22957279"
 repository-code: "https://github.com/vadym-khodak/ai-brand-visibility"
 date-released: 2026-09-25
 version: "1.1.0"
