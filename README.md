@@ -22,6 +22,7 @@
 | Пілот (банки), 18.09.2026 | `data/pilot_responses.jsonl`, `data/pilot_judgements.jsonl` | 750 |
 | Другий суддя тональності (anthropic/claude-sonnet-5), вибірка | `data/validation_judge2.jsonl` | 200 |
 | Кінцівки відповідей (запит контексту): вибірка з двома анотаторами і повна розмітка | `data/clarify_sample.jsonl`, `data/clarify_annotations.jsonl`, `data/clarify_full.jsonl` | 280 / 560 / 4 797 |
+| Перелік запитів обома мовами з галуззю й наміром (генерує `export_queries.py` з `design.py`) | `data/queries.csv`, `data/queries.md` | 80 |
 | Ринкові показники: НБУ станом на 01.08.2026; відвідуваність сайтів за SimilarWeb у рейтингу RetailersUA, 09.2025 | `data/market/` | — |
 | Обчислені таблиці й інтервали | `data/*.csv`, `data/table3.md` | — |
 
@@ -35,6 +36,7 @@
 
 | Файл | Призначення |
 |---|---|
+| `export_queries.py` | Вивантаження переліку запитів у `data/queries.csv` і `data/queries.md` |
 | `design.py` | Галузі, бренди (регулярні вирази з транслітераціями), домени брендів, запити двома мовами, іноземні материнські групи |
 | `audit.py` | Збір через OpenRouter, LLM-суддя, пошук згадок, базові показники |
 | `full_run.ipynb`, `pilot_banks.ipynb` | Основний збір і пілот |

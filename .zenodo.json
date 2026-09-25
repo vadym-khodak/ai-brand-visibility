@@ -1,0 +1,29 @@
+{
+  "upload_type": "dataset",
+  "title": "Visibility of Ukrainian brands in generative AI answers: audit data and code (Видимість українських брендів у відповідях генеративних систем: дані й код аудиту)",
+  "creators": [
+    {
+      "name": "Khodak, Vadym",
+      "affiliation": "Cherkasy State Technological University",
+      "orcid": "0009-0008-9469-3341"
+    }
+  ],
+  "description": "<p>Data and code for an audit of how generative AI systems mention Ukrainian brands in answers to unbranded consumer queries: 42 brands in five industries (banks, e-commerce, pharmacies, postal logistics, food delivery), 80 queries in Ukrainian and English, five consumer intents. The record contains 4,000 answers from five systems collected via OpenRouter (GPT-5.6, Claude Sonnet 5, Gemini 3.8 Flash, DeepSeek V4 Pro without web search; Perplexity Sonar Pro with web search; five repeats), 800 Google AI Overviews collected in five runs, control collections without explicit geographic context, LLM-judge and annotator labels, market benchmarks (National Bank of Ukraine, SimilarWeb), the full query list (data/queries.csv) and scripts that reproduce every number, table and figure of the accompanying article. Collected in September 2026.</p><p>Дані та код аудиту згадувань українських брендів у відповідях генеративних ШІ-систем на небрендовані споживчі запити: 42 бренди п'яти галузей (банки, інтернет-торгівля, аптеки, поштова логістика, доставка їжі), 80 запитів українською та англійською, п'ять типів споживчого наміру. Запис містить 4 000 відповідей п'яти систем, зібраних через OpenRouter, 800 відповідей Google AI Overviews у п'яти зрізах, контрольні збори без явного географічного контексту, розмітку LLM-суддів і анотаторів, ринкові показники (НБУ, SimilarWeb), повний перелік запитів (data/queries.csv) і скрипти, що відтворюють усі числа, таблиці й рисунки статті. Зібрано у вересні 2026 р.</p><p>Licenses: data under CC BY 4.0 (data/LICENSE); code under MIT (LICENSE). Texts of generative AI answers are licensed only to the extent of the author's rights and are also subject to the providers' terms; market data belong to their sources.</p>",
+  "license": "cc-by-4.0",
+  "access_right": "open",
+  "keywords": [
+    "generative engine optimization",
+    "GEO",
+    "brand visibility",
+    "large language models",
+    "LLM audit",
+    "Google AI Overviews",
+    "Perplexity",
+    "Ukraine",
+    "marketing",
+    "consideration set"
+  ],
+  "language": "ukr",
+  "version": "1.0.0",
+  "notes": "Accompanies the article by V. Khodak \"Visibility of Ukrainian brands in generative search engine answers: an assessment methodology and an empirical audit\" (manuscript, 2026)."
+}

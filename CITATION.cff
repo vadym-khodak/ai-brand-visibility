@@ -1,16 +1,19 @@
 cff-version: 1.2.0
 message: "Якщо ви використовуєте ці дані або код, будь ласка, посилайтеся на них так. / If you use this data or code, please cite it as below."
-title: "Visibility of Ukrainian brands in generative search answers: audit data and code"
+type: dataset
+title: "Visibility of Ukrainian brands in generative AI answers: audit data and code"
+abstract: "Data and code for an audit of how generative AI systems mention 42 Ukrainian brands in five industries in answers to 80 unbranded consumer queries in Ukrainian and English: 4,000 answers from five systems, 800 Google AI Overviews, control collections, LLM-judge labels, market benchmarks and scripts reproducing the accompanying article."
 authors:
   - family-names: Khodak
     given-names: Vadym
     affiliation: Cherkasy State Technological University
     orcid: "https://orcid.org/0009-0008-9469-3341"
+repository-code: "https://github.com/vadym-khodak/ai-brand-visibility"
 date-released: 2026-09-25
 version: "1.0.0"
 license:
-  - MIT
   - CC-BY-4.0
+  - MIT
 keywords:
   - generative engine optimization
   - brand visibility
