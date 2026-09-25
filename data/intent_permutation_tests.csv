@@ -1,0 +1,12 @@
+brand,contrast,diff,p,splits,p_holm
+Райффайзен Банк,TRUST−PRICE,0.645,0.0286,70,0.3143
+Креді Агріколь,TRUST−PRICE,0.495,0.0286,70,0.3143
+OTP Bank,TRUST−PRICE,0.45,0.0286,70,0.3143
+УкрСиббанк,TRUST−PRICE,0.45,0.0286,70,0.3143
+monobank,BEST−TRUST,0.165,0.5143,70,1.0
+А-Банк,BEST−TRUST,0.235,0.2,70,0.9697
+Comfy,PRICE−BEST,0.17,0.4,70,1.0
+Фокстрот,PRICE−BEST,0.255,0.3429,70,1.0
+Prom.ua,BEST−TASK,0.52,0.0857,70,0.6
+Zakaz.ua,COMP−інші,-0.52,0.1778,45,0.9697
+Kasta,COMP−інші,-0.18,0.1616,4845,0.9697

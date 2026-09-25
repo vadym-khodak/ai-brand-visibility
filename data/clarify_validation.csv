@@ -1,0 +1,7 @@
+system,detector_rate,n,ppv_ctx,miss_ctx,rate_ctx,ppv_any,miss_any,rate_any
+ai-overview +web,0.96,79,1.0,0.66,0.99,1.0,0.66,0.99
+claude-sonnet-5,0.78,37,1.0,0.89,0.98,1.0,0.94,0.99
+deepseek-v4-pro-0813,0.22,40,0.95,0.1,0.29,0.95,0.1,0.29
+gemini-3.8-flash,0.04,38,0.0,0.0,0.0,0.0,0.0,0.0
+gpt-5.6-sol,0.24,38,0.9,0.11,0.3,0.9,0.11,0.3
+sonar-pro +web,0.13,38,1.0,0.61,0.66,1.0,0.94,0.95

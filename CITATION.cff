@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Якщо ви використовуєте ці дані або код, будь ласка, посилайтеся на них так. / If you use this data or code, please cite it as below."
+title: "Visibility of Ukrainian brands in generative search answers: audit data and code"
+authors:
+  - family-names: Khodak
+    given-names: Vadym
+    affiliation: Cherkasy State Technological University
+    orcid: "https://orcid.org/0009-0008-9469-3341"
+date-released: 2026-09-25
+version: "1.0.0"
+license: MIT
+keywords:
+  - generative engine optimization
+  - brand visibility
+  - large language models
+  - Google AI Overviews
+  - Ukraine

@@ -1,0 +1,43 @@
+industry,brand,min,max,sys_max,sys_min,diff_lo,diff_hi,p,q,range
+bank,ПриватБанк,0.855,0.995,gemini-3.8-flash,sonar-pro +web,0.045,0.26,0.031,0.039,0.14
+bank,monobank,0.58,0.925,gemini-3.8-flash,sonar-pro +web,0.19,0.5,0.0,0.001,0.345
+bank,Ощадбанк,0.36,0.62,claude-sonnet-5,gemini-3.8-flash,0.155,0.375,0.0,0.0,0.26
+bank,Райффайзен Банк,0.54,0.655,deepseek-v4-pro-0813,gemini-3.8-flash,-0.03,0.265,0.424,0.424,0.115
+bank,ПУМБ,0.46,0.775,gemini-3.8-flash,claude-sonnet-5,0.2,0.425,0.0,0.0,0.315
+bank,УкрСиббанк,0.185,0.56,deepseek-v4-pro-0813,gpt-5.6-sol,0.255,0.5,0.0,0.0,0.375
+bank,А-Банк,0.09,0.635,gemini-3.8-flash,sonar-pro +web,0.36,0.72,0.0,0.0,0.545
+bank,Sense Bank,0.27,0.72,deepseek-v4-pro-0813,sonar-pro +web,0.325,0.565,0.0,0.0,0.45
+bank,Укргазбанк,0.13,0.315,sonar-pro +web,gemini-3.8-flash,0.05,0.335,0.005,0.007,0.185
+bank,OTP Bank,0.145,0.32,deepseek-v4-pro-0813,gemini-3.8-flash,0.055,0.31,0.028,0.037,0.175
+bank,Укрексімбанк,0.105,0.245,deepseek-v4-pro-0813,claude-sonnet-5,0.045,0.25,0.072,0.08,0.14
+bank,Креді Агріколь,0.1,0.305,deepseek-v4-pro-0813,claude-sonnet-5,0.1,0.31,0.0,0.0,0.205
+bank,Кредобанк,0.045,0.225,sonar-pro +web,gemini-3.8-flash,0.06,0.33,0.044,0.05,0.18
+ecom,Rozetka,0.63,0.95,claude-sonnet-5,sonar-pro +web,0.145,0.49,0.0,0.0,0.32
+ecom,Prom.ua,0.175,0.62,claude-sonnet-5,sonar-pro +web,0.3,0.59,0.0,0.0,0.445
+ecom,Епіцентр,0.3,0.485,deepseek-v4-pro-0813,sonar-pro +web,-0.035,0.405,0.122,0.131,0.185
+ecom,Comfy,0.425,0.845,deepseek-v4-pro-0813,sonar-pro +web,0.25,0.585,0.0,0.0,0.42
+ecom,Фокстрот,0.44,0.785,deepseek-v4-pro-0813,sonar-pro +web,0.19,0.495,0.0,0.0,0.345
+ecom,Allo,0.275,0.755,gemini-3.8-flash,sonar-pro +web,0.255,0.685,0.0,0.0,0.48
+ecom,MOYO,0.21,0.51,gpt-5.6-sol,deepseek-v4-pro-0813,0.165,0.435,0.0,0.0,0.3
+ecom,Kasta,0.055,0.395,gemini-3.8-flash,sonar-pro +web,0.15,0.535,0.01,0.015,0.34
+ecom,MAUDAU,0.0,0.1,gpt-5.6-sol,claude-sonnet-5,0.02,0.21,0.242,0.254,0.1
+ecom,Цитрус,0.17,0.565,deepseek-v4-pro-0813,sonar-pro +web,0.26,0.535,0.0,0.0,0.395
+food,Glovo,0.81,1.0,deepseek-v4-pro-0813,sonar-pro +web,0.08,0.32,0.035,0.043,0.19
+food,Bolt Food,0.63,0.98,deepseek-v4-pro-0813,sonar-pro +web,0.19,0.52,0.0,0.0,0.35
+food,Zakaz.ua,0.32,0.6,sonar-pro +web,deepseek-v4-pro-0813,0.08,0.51,0.013,0.018,0.28
+food,Сільпо,0.2,0.95,gemini-3.8-flash,sonar-pro +web,0.52,0.94,0.0,0.0,0.75
+pharma,Аптека 9-1-1,0.53,0.765,deepseek-v4-pro-0813,sonar-pro +web,0.11,0.365,0.002,0.003,0.235
+pharma,Подорожник,0.405,0.89,gemini-3.8-flash,sonar-pro +web,0.315,0.64,0.0,0.0,0.485
+pharma,АНЦ,0.43,0.915,gemini-3.8-flash,sonar-pro +web,0.35,0.62,0.0,0.0,0.485
+pharma,Аптека Доброго Дня,0.225,0.78,gemini-3.8-flash,sonar-pro +web,0.41,0.695,0.0,0.0,0.555
+pharma,Бажаємо здоров'я,0.18,0.71,claude-sonnet-5,sonar-pro +web,0.395,0.665,0.0,0.0,0.53
+pharma,Аптека оптових цін,0.0,0.245,gemini-3.8-flash,claude-sonnet-5,0.11,0.4,0.014,0.018,0.245
+pharma,D.S.,0.01,0.145,gpt-5.6-sol,gemini-3.8-flash,0.065,0.225,0.0,0.0,0.135
+pharma,Копійка,0.01,0.675,gemini-3.8-flash,deepseek-v4-pro-0813,0.495,0.825,0.0,0.0,0.665
+pharma,Tabletki.ua,0.355,0.925,gemini-3.8-flash,sonar-pro +web,0.42,0.715,0.0,0.0,0.57
+pharma,Liki24,0.19,0.795,gemini-3.8-flash,sonar-pro +web,0.455,0.745,0.0,0.0,0.605
+post,Нова Пошта,0.87,1.0,gemini-3.8-flash,sonar-pro +web,0.0,0.32,0.375,0.384,0.13
+post,Укрпошта,0.81,0.91,claude-sonnet-5,sonar-pro +web,0.0,0.22,0.042,0.049,0.1
+post,Meest,0.62,0.91,deepseek-v4-pro-0813,sonar-pro +web,0.14,0.44,0.0,0.0,0.29
+post,Delivery,0.14,0.36,gemini-3.8-flash,claude-sonnet-5,0.07,0.4,0.002,0.003,0.22
+post,САТ,0.02,0.19,gpt-5.6-sol,claude-sonnet-5,0.02,0.4,0.036,0.043,0.17

@@ -1,0 +1,560 @@
+{"id": 0, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "budget"], "cost": 0.0001548}
+{"id": 0, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "product"], "cost": 0.002322}
+{"id": 1, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "preferences"], "cost": 0.0002004}
+{"id": 1, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["purpose", "preferences"], "cost": 0.00237}
+{"id": 2, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0002194}
+{"id": 2, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002944}
+{"id": 3, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product", "other"], "cost": 0.000272}
+{"id": 3, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002586}
+{"id": 4, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "location"], "cost": 0.0001488}
+{"id": 4, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product", "preferences"], "cost": 0.00263}
+{"id": 5, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "preferences", "other"], "cost": 0.0002518}
+{"id": 5, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product", "purpose"], "cost": 0.002516}
+{"id": 6, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "purpose"], "cost": 0.0001924}
+{"id": 6, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.002932}
+{"id": 7, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "budget"], "cost": 0.0001662}
+{"id": 7, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "product"], "cost": 0.00261}
+{"id": 8, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001436}
+{"id": 8, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002562}
+{"id": 9, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "product"], "cost": 0.0001716}
+{"id": 9, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences", "other"], "cost": 0.002652}
+{"id": 10, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.000149}
+{"id": 10, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002628}
+{"id": 11, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "budget"], "cost": 0.0001444}
+{"id": 11, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "other"], "cost": 0.002694}
+{"id": 12, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "location", "other"], "cost": 0.000152}
+{"id": 12, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "location", "other"], "cost": 0.002678}
+{"id": 13, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001482}
+{"id": 13, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002596}
+{"id": 14, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "budget"], "cost": 0.000196}
+{"id": 14, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.00299}
+{"id": 15, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.000225}
+{"id": 15, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002694}
+{"id": 16, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "location"], "cost": 0.0001834}
+{"id": 16, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002802}
+{"id": 17, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.0001394}
+{"id": 17, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.00246}
+{"id": 18, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "preferences", "location"], "cost": 0.0001578}
+{"id": 18, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "location", "preferences"], "cost": 0.002524}
+{"id": 19, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.0001674}
+{"id": 19, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.002628}
+{"id": 20, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001558}
+{"id": 20, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002468}
+{"id": 21, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["preferences"], "cost": 0.0001936}
+{"id": 21, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences"], "cost": 0.00297}
+{"id": 22, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "product", "location"], "cost": 0.0001404}
+{"id": 22, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product", "other"], "cost": 0.002484}
+{"id": 23, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "preferences"], "cost": 0.000174}
+{"id": 23, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "preferences"], "cost": 0.002736}
+{"id": 24, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "preferences"], "cost": 0.0002662}
+{"id": 24, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "preferences"], "cost": 0.003042}
+{"id": 25, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.000184}
+{"id": 25, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.002766}
+{"id": 26, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "budget", "product"], "cost": 0.0001936}
+{"id": 26, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "location", "budget"], "cost": 0.002448}
+{"id": 27, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "purpose", "product"], "cost": 0.0001348}
+{"id": 27, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "purpose", "product"], "cost": 0.002408}
+{"id": 28, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.000136}
+{"id": 28, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002516}
+{"id": 29, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["preferences"], "cost": 0.0002648}
+{"id": 29, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences"], "cost": 0.002936}
+{"id": 30, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0003036}
+{"id": 30, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002652}
+{"id": 31, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product", "preferences"], "cost": 0.0002522}
+{"id": 31, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "location", "preferences"], "cost": 0.002812}
+{"id": 32, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001306}
+{"id": 32, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002366}
+{"id": 33, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose"], "cost": 0.0001608}
+{"id": 33, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["purpose"], "cost": 0.002606}
+{"id": 34, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "product", "preferences"], "cost": 0.0001502}
+{"id": 34, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "budget", "preferences"], "cost": 0.002658}
+{"id": 35, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "product"], "cost": 0.0001732}
+{"id": 35, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["purpose", "other"], "cost": 0.002764}
+{"id": 36, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "location"], "cost": 0.0001444}
+{"id": 36, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002288}
+{"id": 37, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.0001502}
+{"id": 37, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "other"], "cost": 0.002426}
+{"id": 38, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "location"], "cost": 0.0001744}
+{"id": 38, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002288}
+{"id": 39, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "preferences"], "cost": 0.0002206}
+{"id": 39, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "preferences"], "cost": 0.00297}
+{"id": 40, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "product", "other"], "cost": 0.0002526}
+{"id": 40, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["purpose", "product", "other"], "cost": 0.002946}
+{"id": 41, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0002404}
+{"id": 41, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "location"], "cost": 0.002782}
+{"id": 42, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0002432}
+{"id": 42, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002964}
+{"id": 43, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "purpose", "preferences"], "cost": 0.0002008}
+{"id": 43, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "purpose", "preferences"], "cost": 0.002704}
+{"id": 44, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001492}
+{"id": 44, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002398}
+{"id": 45, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "preferences"], "cost": 0.0001604}
+{"id": 45, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences", "other"], "cost": 0.002598}
+{"id": 46, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "budget", "location"], "cost": 0.000149}
+{"id": 46, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "product", "preferences"], "cost": 0.002616}
+{"id": 47, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product", "preferences"], "cost": 0.000182}
+{"id": 47, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "preferences"], "cost": 0.002814}
+{"id": 48, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.000144}
+{"id": 48, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002346}
+{"id": 49, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001112}
+{"id": 49, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.001996}
+{"id": 50, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "other", "preferences"], "cost": 0.0001312}
+{"id": 50, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002282}
+{"id": 51, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001862}
+{"id": 51, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002766}
+{"id": 52, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "product", "other"], "cost": 0.0002332}
+{"id": 52, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "preferences", "product"], "cost": 0.002704}
+{"id": 53, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "budget", "other"], "cost": 0.0002924}
+{"id": 53, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "budget", "purpose", "other"], "cost": 0.00233}
+{"id": 54, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "preferences"], "cost": 0.0002778}
+{"id": 54, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "preferences"], "cost": 0.00305}
+{"id": 55, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "preferences"], "cost": 0.0001954}
+{"id": 55, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences", "product"], "cost": 0.003058}
+{"id": 56, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "budget"], "cost": 0.0001544}
+{"id": 56, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "budget"], "cost": 0.002752}
+{"id": 57, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001776}
+{"id": 57, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002624}
+{"id": 58, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001862}
+{"id": 58, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002766}
+{"id": 59, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0002448}
+{"id": 59, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002944}
+{"id": 60, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001786}
+{"id": 60, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.00277}
+{"id": 61, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product", "preferences"], "cost": 0.0001302}
+{"id": 61, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002262}
+{"id": 62, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002128}
+{"id": 62, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002852}
+{"id": 63, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "location"], "cost": 0.0001498}
+{"id": 63, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "location"], "cost": 0.00261}
+{"id": 64, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001812}
+{"id": 64, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002624}
+{"id": 65, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "product", "preferences"], "cost": 0.0003474}
+{"id": 65, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "preferences"], "cost": 0.00305}
+{"id": 66, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001526}
+{"id": 66, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002766}
+{"id": 67, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.00022}
+{"id": 67, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002446}
+{"id": 68, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001812}
+{"id": 68, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002748}
+{"id": 69, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.000339}
+{"id": 69, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "purpose", "preferences"], "cost": 0.003168}
+{"id": 70, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0002502}
+{"id": 70, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002912}
+{"id": 71, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001798}
+{"id": 71, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00264}
+{"id": 72, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["preferences", "purpose"], "cost": 0.0001254}
+{"id": 72, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences"], "cost": 0.002262}
+{"id": 73, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose"], "cost": 0.0001858}
+{"id": 73, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["purpose"], "cost": 0.002834}
+{"id": 74, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose"], "cost": 0.0001858}
+{"id": 74, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["purpose"], "cost": 0.002834}
+{"id": 75, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002226}
+{"id": 75, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00286}
+{"id": 76, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["other", "product", "preferences"], "cost": 0.0001494}
+{"id": 76, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product", "preferences"], "cost": 0.002702}
+{"id": 77, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001798}
+{"id": 77, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00264}
+{"id": 78, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001788}
+{"id": 78, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002772}
+{"id": 79, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0002036}
+{"id": 79, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.00267}
+{"id": 80, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001564}
+{"id": 80, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002726}
+{"id": 81, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001496}
+{"id": 81, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002556}
+{"id": 82, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.0001496}
+{"id": 82, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences"], "cost": 0.002616}
+{"id": 83, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "preferences", "other"], "cost": 0.0001626}
+{"id": 83, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "purpose", "preferences"], "cost": 0.002738}
+{"id": 84, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.0001422}
+{"id": 84, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.002426}
+{"id": 85, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001548}
+{"id": 85, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002636}
+{"id": 86, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.000182}
+{"id": 86, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002798}
+{"id": 87, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001792}
+{"id": 87, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002806}
+{"id": 88, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["preferences"], "cost": 0.0001492}
+{"id": 88, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences", "other"], "cost": 0.002648}
+{"id": 89, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "preferences"], "cost": 0.0001536}
+{"id": 89, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["purpose", "other"], "cost": 0.00264}
+{"id": 90, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001524}
+{"id": 90, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002624}
+{"id": 91, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "budget"], "cost": 0.0001988}
+{"id": 91, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "other"], "cost": 0.003102}
+{"id": 92, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "preferences", "other"], "cost": 0.0003632}
+{"id": 92, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["purpose", "preferences"], "cost": 0.002582}
+{"id": 93, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001816}
+{"id": 93, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.00279}
+{"id": 94, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001732}
+{"id": 94, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002528}
+{"id": 95, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001702}
+{"id": 95, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002682}
+{"id": 96, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.000192}
+{"id": 96, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002916}
+{"id": 97, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0002054}
+{"id": 97, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002778}
+{"id": 98, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001506}
+{"id": 98, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002552}
+{"id": 99, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "product"], "cost": 0.000159}
+{"id": 99, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "other"], "cost": 0.002678}
+{"id": 100, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "location"], "cost": 0.000192}
+{"id": 100, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "location"], "cost": 0.002854}
+{"id": 101, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001958}
+{"id": 101, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002898}
+{"id": 102, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "purpose"], "cost": 0.0001982}
+{"id": 102, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["purpose"], "cost": 0.002978}
+{"id": 103, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "budget", "other"], "cost": 0.0001912}
+{"id": 103, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "other"], "cost": 0.002836}
+{"id": 104, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "product", "preferences"], "cost": 0.0001852}
+{"id": 104, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "product", "preferences"], "cost": 0.00287}
+{"id": 105, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001866}
+{"id": 105, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002938}
+{"id": 106, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001774}
+{"id": 106, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.00275}
+{"id": 107, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.0001922}
+{"id": 107, "annotator": "anthropic/claude-sonnet-5", "label": "generic_offer", "context_types": [], "cost": 0.002936}
+{"id": 108, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001932}
+{"id": 108, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002866}
+{"id": 109, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001474}
+{"id": 109, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002422}
+{"id": 110, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001684}
+{"id": 110, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002642}
+{"id": 111, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.000191}
+{"id": 111, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002856}
+{"id": 112, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.000166}
+{"id": 112, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002572}
+{"id": 113, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "product"], "cost": 0.000175}
+{"id": 113, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.002754}
+{"id": 114, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0002392}
+{"id": 114, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002884}
+{"id": 115, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001602}
+{"id": 115, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002522}
+{"id": 116, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "other"], "cost": 0.0001802}
+{"id": 116, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "other"], "cost": 0.002774}
+{"id": 117, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "purpose"], "cost": 0.0001986}
+{"id": 117, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "purpose"], "cost": 0.003}
+{"id": 118, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001686}
+{"id": 118, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002622}
+{"id": 119, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001858}
+{"id": 119, "annotator": "anthropic/claude-sonnet-5", "label": "generic_offer", "context_types": [], "cost": 0.002904}
+{"id": 120, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "budget"], "cost": 0.0002184}
+{"id": 120, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "budget"], "cost": 0.002696}
+{"id": 121, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001514}
+{"id": 121, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002526}
+{"id": 122, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "purpose", "product"], "cost": 0.0001428}
+{"id": 122, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.002382}
+{"id": 123, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001378}
+{"id": 123, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002304}
+{"id": 124, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose"], "cost": 0.0001334}
+{"id": 124, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["purpose"], "cost": 0.002322}
+{"id": 125, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001588}
+{"id": 125, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002724}
+{"id": 126, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001462}
+{"id": 126, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.00254}
+{"id": 127, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "budget", "other"], "cost": 0.0001404}
+{"id": 127, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "budget", "other"], "cost": 0.002374}
+{"id": 128, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "budget"], "cost": 0.0001436}
+{"id": 128, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "budget"], "cost": 0.00247}
+{"id": 129, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001498}
+{"id": 129, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002624}
+{"id": 130, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "location"], "cost": 0.0001552}
+{"id": 130, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002686}
+{"id": 131, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.00013}
+{"id": 131, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.00218}
+{"id": 132, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "other"], "cost": 0.0002356}
+{"id": 132, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["purpose", "other"], "cost": 0.002716}
+{"id": 133, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.000188}
+{"id": 133, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.003032}
+{"id": 134, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001612}
+{"id": 134, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002686}
+{"id": 135, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.000139}
+{"id": 135, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002416}
+{"id": 136, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0002032}
+{"id": 136, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002572}
+{"id": 137, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001512}
+{"id": 137, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002682}
+{"id": 138, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "preferences"], "cost": 0.000132}
+{"id": 138, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences"], "cost": 0.002206}
+{"id": 139, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001392}
+{"id": 139, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002394}
+{"id": 140, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001284}
+{"id": 140, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002126}
+{"id": 141, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001154}
+{"id": 141, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00229}
+{"id": 142, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001268}
+{"id": 142, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002202}
+{"id": 143, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001642}
+{"id": 143, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002606}
+{"id": 144, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001274}
+{"id": 144, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00213}
+{"id": 145, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 9.22e-05}
+{"id": 145, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00163}
+{"id": 146, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001348}
+{"id": 146, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002372}
+{"id": 147, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002242}
+{"id": 147, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002968}
+{"id": 148, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001526}
+{"id": 148, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002552}
+{"id": 149, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002192}
+{"id": 149, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002952}
+{"id": 150, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000184}
+{"id": 150, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002858}
+{"id": 151, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001924}
+{"id": 151, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002914}
+{"id": 152, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001948}
+{"id": 152, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002986}
+{"id": 153, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 9.78e-05}
+{"id": 153, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.001762}
+{"id": 154, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000216}
+{"id": 154, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002966}
+{"id": 155, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.0001578}
+{"id": 155, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.002716}
+{"id": 156, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001628}
+{"id": 156, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00277}
+{"id": 157, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000217}
+{"id": 157, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002798}
+{"id": 158, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000182}
+{"id": 158, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002686}
+{"id": 159, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001304}
+{"id": 159, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00225}
+{"id": 160, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001544}
+{"id": 160, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002668}
+{"id": 161, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002224}
+{"id": 161, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002958}
+{"id": 162, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002294}
+{"id": 162, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002974}
+{"id": 163, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000218}
+{"id": 163, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.003684}
+{"id": 164, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002174}
+{"id": 164, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002794}
+{"id": 165, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002202}
+{"id": 165, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002906}
+{"id": 166, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002238}
+{"id": 166, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.003416}
+{"id": 167, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001878}
+{"id": 167, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00292}
+{"id": 168, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001924}
+{"id": 168, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.003226}
+{"id": 169, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002276}
+{"id": 169, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002996}
+{"id": 170, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002256}
+{"id": 170, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.003508}
+{"id": 171, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001948}
+{"id": 171, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002818}
+{"id": 172, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000189}
+{"id": 172, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00269}
+{"id": 173, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002178}
+{"id": 173, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002914}
+{"id": 174, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001904}
+{"id": 174, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002746}
+{"id": 175, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002222}
+{"id": 175, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "other"], "cost": 0.002976}
+{"id": 176, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001848}
+{"id": 176, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002898}
+{"id": 177, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001904}
+{"id": 177, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002724}
+{"id": 178, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.0002232}
+{"id": 178, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences", "other"], "cost": 0.002642}
+{"id": 179, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001926}
+{"id": 179, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00297}
+{"id": 180, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.00015}
+{"id": 180, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002554}
+{"id": 181, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002156}
+{"id": 181, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002858}
+{"id": 182, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002262}
+{"id": 182, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.003014}
+{"id": 183, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001876}
+{"id": 183, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002928}
+{"id": 184, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002324}
+{"id": 184, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00294}
+{"id": 185, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.00022}
+{"id": 185, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.003168}
+{"id": 186, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000189}
+{"id": 186, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002914}
+{"id": 187, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000187}
+{"id": 187, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00269}
+{"id": 188, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001476}
+{"id": 188, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002598}
+{"id": 189, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000157}
+{"id": 189, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002742}
+{"id": 190, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001874}
+{"id": 190, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00265}
+{"id": 191, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002282}
+{"id": 191, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.003404}
+{"id": 192, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001888}
+{"id": 192, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002668}
+{"id": 193, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001888}
+{"id": 193, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002874}
+{"id": 194, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002172}
+{"id": 194, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.003582}
+{"id": 195, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001892}
+{"id": 195, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002732}
+{"id": 196, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000186}
+{"id": 196, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002698}
+{"id": 197, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001838}
+{"id": 197, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002652}
+{"id": 198, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001782}
+{"id": 198, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002684}
+{"id": 199, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000154}
+{"id": 199, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002936}
+{"id": 200, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "budget", "purpose", "product", "preferences", "other"], "cost": 0.0001616}
+{"id": 200, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "budget", "product", "other"], "cost": 0.002598}
+{"id": 201, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "location", "product"], "cost": 0.00016}
+{"id": 201, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "budget", "product"], "cost": 0.002572}
+{"id": 202, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001826}
+{"id": 202, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.003058}
+{"id": 203, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001284}
+{"id": 203, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.0021}
+{"id": 204, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.0001408}
+{"id": 204, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.002434}
+{"id": 205, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001266}
+{"id": 205, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.00217}
+{"id": 206, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.00014}
+{"id": 206, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002302}
+{"id": 207, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.000149}
+{"id": 207, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.00241}
+{"id": 208, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001476}
+{"id": 208, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002576}
+{"id": 209, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "other"], "cost": 0.0001322}
+{"id": 209, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "other"], "cost": 0.002148}
+{"id": 210, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.000156}
+{"id": 210, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product", "other"], "cost": 0.002714}
+{"id": 211, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "other"], "cost": 0.0001648}
+{"id": 211, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product", "other"], "cost": 0.002666}
+{"id": 212, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "location"], "cost": 0.000143}
+{"id": 212, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002282}
+{"id": 213, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0002192}
+{"id": 213, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00322}
+{"id": 214, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "other"], "cost": 0.0001378}
+{"id": 214, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product", "other"], "cost": 0.002232}
+{"id": 215, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "purpose", "product", "other"], "cost": 0.0001802}
+{"id": 215, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product", "other"], "cost": 0.003656}
+{"id": 216, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "other"], "cost": 0.0001372}
+{"id": 216, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002212}
+{"id": 217, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "other"], "cost": 0.0001386}
+{"id": 217, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "other"], "cost": 0.002794}
+{"id": 218, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001448}
+{"id": 218, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002386}
+{"id": 219, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001386}
+{"id": 219, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002334}
+{"id": 220, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001488}
+{"id": 220, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002978}
+{"id": 221, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0005228}
+{"id": 221, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "preferences"], "cost": 0.002662}
+{"id": 222, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001474}
+{"id": 222, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002564}
+{"id": 223, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001114}
+{"id": 223, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.001996}
+{"id": 224, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001498}
+{"id": 224, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002398}
+{"id": 225, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["purpose", "budget", "other"], "cost": 0.0001352}
+{"id": 225, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "budget", "product"], "cost": 0.002356}
+{"id": 226, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001402}
+{"id": 226, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002484}
+{"id": 227, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001592}
+{"id": 227, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002732}
+{"id": 228, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001366}
+{"id": 228, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002324}
+{"id": 229, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001076}
+{"id": 229, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.00191}
+{"id": 230, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001236}
+{"id": 230, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002092}
+{"id": 231, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001498}
+{"id": 231, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences", "product"], "cost": 0.002942}
+{"id": 232, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001342}
+{"id": 232, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002372}
+{"id": 233, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "budget", "purpose", "product", "other"], "cost": 0.0001982}
+{"id": 233, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "budget", "product", "preferences"], "cost": 0.00299}
+{"id": 234, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001414}
+{"id": 234, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.0025}
+{"id": 235, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001836}
+{"id": 235, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002816}
+{"id": 236, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001198}
+{"id": 236, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002154}
+{"id": 237, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000147}
+{"id": 237, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.003182}
+{"id": 238, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000148}
+{"id": 238, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002424}
+{"id": 239, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.0001434}
+{"id": 239, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002558}
+{"id": 240, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001346}
+{"id": 240, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002266}
+{"id": 241, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.000178}
+{"id": 241, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002934}
+{"id": 242, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001936}
+{"id": 242, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002984}
+{"id": 243, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "other"], "cost": 0.0003626}
+{"id": 243, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product", "other"], "cost": 0.002858}
+{"id": 244, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "other"], "cost": 0.0001716}
+{"id": 244, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "location"], "cost": 0.002654}
+{"id": 245, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001458}
+{"id": 245, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002494}
+{"id": 246, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0002436}
+{"id": 246, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002574}
+{"id": 247, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "preferences"], "cost": 0.0001598}
+{"id": 247, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "preferences"], "cost": 0.00267}
+{"id": 248, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "other"], "cost": 0.000167}
+{"id": 248, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "other"], "cost": 0.002714}
+{"id": 249, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "other", "purpose"], "cost": 0.0001548}
+{"id": 249, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product", "preferences"], "cost": 0.002708}
+{"id": 250, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001426}
+{"id": 250, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002442}
+{"id": 251, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.0001516}
+{"id": 251, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002566}
+{"id": 252, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.000179}
+{"id": 252, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002918}
+{"id": 253, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001634}
+{"id": 253, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product", "purpose"], "cost": 0.00264}
+{"id": 254, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001436}
+{"id": 254, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.002454}
+{"id": 255, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001922}
+{"id": 255, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product", "other"], "cost": 0.002986}
+{"id": 256, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001504}
+{"id": 256, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.00259}
+{"id": 257, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001466}
+{"id": 257, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002544}
+{"id": 258, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "product"], "cost": 0.00024}
+{"id": 258, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget", "product"], "cost": 0.003056}
+{"id": 259, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product"], "cost": 0.0001618}
+{"id": 259, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.00255}
+{"id": 260, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001822}
+{"id": 260, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.00296}
+{"id": 261, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.000142}
+{"id": 261, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.00245}
+{"id": 262, "annotator": "openai/gpt-5.6-luna", "label": "none", "context_types": [], "cost": 0.000129}
+{"id": 262, "annotator": "anthropic/claude-sonnet-5", "label": "none", "context_types": [], "cost": 0.002122}
+{"id": 263, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.0004922}
+{"id": 263, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["preferences"], "cost": 0.00313}
+{"id": 264, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.0001738}
+{"id": 264, "annotator": "anthropic/claude-sonnet-5", "label": "generic_offer", "context_types": [], "cost": 0.002724}
+{"id": 265, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "budget", "other"], "cost": 0.0001406}
+{"id": 265, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "budget", "other"], "cost": 0.002382}
+{"id": 266, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.0001458}
+{"id": 266, "annotator": "anthropic/claude-sonnet-5", "label": "generic_offer", "context_types": [], "cost": 0.002554}
+{"id": 267, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.0001638}
+{"id": 267, "annotator": "anthropic/claude-sonnet-5", "label": "generic_offer", "context_types": [], "cost": 0.002636}
+{"id": 268, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "budget", "product"], "cost": 0.0001806}
+{"id": 268, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "budget", "product"], "cost": 0.00286}
+{"id": 269, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.0001648}
+{"id": 269, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.00267}
+{"id": 270, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001786}
+{"id": 270, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002788}
+{"id": 271, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001534}
+{"id": 271, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.00265}
+{"id": 272, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.0001956}
+{"id": 272, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "purpose"], "cost": 0.003014}
+{"id": 273, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location"], "cost": 0.0001608}
+{"id": 273, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location"], "cost": 0.002532}
+{"id": 274, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.0001642}
+{"id": 274, "annotator": "anthropic/claude-sonnet-5", "label": "generic_offer", "context_types": [], "cost": 0.002622}
+{"id": 275, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["product", "purpose", "preferences"], "cost": 0.000157}
+{"id": 275, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["product"], "cost": 0.00283}
+{"id": 276, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.0001564}
+{"id": 276, "annotator": "anthropic/claude-sonnet-5", "label": "generic_offer", "context_types": [], "cost": 0.002656}
+{"id": 277, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["budget", "location"], "cost": 0.0001618}
+{"id": 277, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["budget"], "cost": 0.00448}
+{"id": 278, "annotator": "openai/gpt-5.6-luna", "label": "generic_offer", "context_types": [], "cost": 0.00019}
+{"id": 278, "annotator": "anthropic/claude-sonnet-5", "label": "generic_offer", "context_types": [], "cost": 0.002706}
+{"id": 279, "annotator": "openai/gpt-5.6-luna", "label": "context_request", "context_types": ["location", "product"], "cost": 0.0001708}
+{"id": 279, "annotator": "anthropic/claude-sonnet-5", "label": "context_request", "context_types": ["location", "product"], "cost": 0.002756}
