@@ -1,0 +1,540 @@
+Дані в цій папці ліцензовано на умовах Creative Commons «Із Зазначенням Авторства 4.0 Міжнародна» (CC BY 4.0).
+The data in this folder are licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+Copyright (c) 2026 Вадим Ходак / Vadym Khodak
+
+СФЕРА ДІЇ
+Ліцензія охоплює матеріали, створені автором дослідження: тексти запитів, словник брендів, розмітку
+LLM-суддів і анотаторів, зведені набори даних та обчислені таблиці, а також добірку даних загалом.
+Тексти відповідей генеративних систем ліцензуються лише в межах прав, які належать автору; їх
+використання регулюють також умови відповідних сервісів. Ринкові показники Національного банку
+України (bank.gov.ua) та відвідуваність сайтів за даними SimilarWeb у рейтингу RetailersUA належать
+їхнім джерелам і цією ліцензією не охоплюються.
+
+SCOPE
+The license covers material created by the author of the study: query texts, the brand dictionary,
+LLM-judge and annotator labels, compiled datasets and computed tables, as well as the data
+collection as a whole. Texts of generative AI answers are licensed only to the extent of the rights
+held by the author; their use is also governed by the terms of the respective services. Market
+indicators of the National Bank of Ukraine (bank.gov.ua) and website traffic from SimilarWeb as
+published by RetailersUA belong to their sources and are not covered by this license.
+
+ЗАЗНАЧЕННЯ АВТОРСТВА / ATTRIBUTION
+Ходак В. В. Видимість українських брендів у відповідях генеративних систем: дані й код аудиту. 2026.
+URL: https://github.com/vadym-khodak/ai-brand-visibility
+Khodak, V. (2026). Visibility of Ukrainian brands in generative search answers: audit data and code.
+https://github.com/vadym-khodak/ai-brand-visibility
+
+Нижче наведено повний юридичний текст ліцензії: спершу офіційний переклад Creative Commons українською
+(https://creativecommons.org/licenses/by/4.0/legalcode.uk), потім оригінал англійською
+(https://creativecommons.org/licenses/by/4.0/legalcode).
+The full legal code follows: first the official Creative Commons Ukrainian translation, then the
+English original.
+
+
+=======================================================================
+УКРАЇНСЬКОЮ
+=======================================================================
+
+Із Зазначенням Авторства 4.0 Міжнародна
+
+Шляхом здійснення Ліцензованих Прав (визначені нижче), Ви приймаєте і погоджуєтесь виконувати умови та правила цієї Публічної Ліцензії Creative Commons “Із Зазначенням Авторства 4.0 Міжнародна” («Публічна Ліцензія»). Якщо ця Публічна Ліцензія може вважатися договором, Вам, за прийняття Вами цих умов, надаються Ліцензовані Права і Ліцензіар надає Вам такі права в обмін на вигоди, котрі Ліцензіар отримує, роблячи Ліцензований Матеріал доступним на цих умовах.
+
+Стаття 1 - Визначення.
+
+a.  Адаптований Матеріал – матеріал, що охороняється Авторським і/або Подібними Правами, що є похідним від, або заснований на Ліцензованому Матеріалі, і в якому Ліцензований Матеріал перекладено, упорядковано, перероблено, чи іншим чином змінено у спосіб, що потребує отримання дозволу від Ліцензіара як суб’єкта Авторського і/або Подібних Прав. Для потреб цієї Публічної Ліцензії, у разі, якщо Ліцензованим Матеріалом є музичний твір, виконання або фонограма, Адаптований Матеріал буде завжди виникати, коли Ліцензований Матеріал синхронізується у часі з рухомим зображенням.
+b.  Ліцензія на Адаптований Матеріал – ліцензія, котру Ви застосовуєте для розпорядження Вашими Авторським і Подібними Правами на Ваш творчий внесок до Адаптованого Матеріалу у відповідності з умовами та правилами цієї Публічної Ліцензії.
+c.  Авторське і Подібні Права – авторське і/або подібні права, пов’язані з авторським правом включаючи, але не обмежуючись, правами на виконання, передачі (програми) організацій мовлення, фонограми, та Правами Sui Generis на Бази Даних, незалежно від того як такі права називаються, або класифікуються. Для потреб цієї Публічної Ліцензії, права, перелічені в Статті 2(b)(1)-(2), не є Авторським і Подібними Правами.
+d.  Технічні Засоби Захисту – засоби, які заборонено обходити за відсутності належних повноважень, відповідно до законів, спрямованих на виконання зобов’язань відповідно до Статті 11 Договору ВОІВ про авторське право від 20.12.1996 р., та/або подібних міжнародних угод.
+e.  Винятки та Обмеження – добросовісне використання (fair use і fair dealing), і/або будь-які інші винятки або обмеження з Авторського і Подібних Прав, що застосовні до використання Вами Ліцензованого Матеріалу.
+f.  Ліцензований Матеріал – художній або літературний твір, база даних, або інший матеріал до якого Ліцензіар застосував цю Публічну Ліцензію.
+g.  Ліцензовані Права – права надані Вам на умовах та правилах цієї Публічної Ліцензії, що обмежуються Авторським і Подібними Правами, котрі поширюються на використання Вами Ліцензованого Матеріалу, і на які Ліцензіар має право надавати ліцензію.
+h.  Ліцензіар – фізична особа (фізичні особи) або юридична особа (юридичні особи), що надають права за цією Публічною Ліцензією.
+i.  Поширення – подання Матеріалу публіці будь-якими способами, або засобами, які вимагають дозволу відповідно до Ліцензованих Прав, таких, як відтворення, публічний показ, публічне виконання, розповсюдження, імпорт примірників Матеріалу, подання матеріалу до загального відома публіки таким чином, що її представники можуть здійснити доступ до Матеріалу з будь-якого місця і у будь-який час за їх власним вибором.
+j.  Права Sui Generis на Бази Даних – права, відмінні від авторського права, встановлені Директивою 96/9 ЄС Європейського Парламенту та Ради від 11.03.1996 року про правову охорону баз даних, із змінами та/або доповненнями, та інші рівнозначні по суті права в будь-де в світі.
+k.  Ви – фізична, чи юридична особа, яка здійснює Ліцензовані Права відповідно до умов даної Публічної Ліцензії. Поняття Ваш має відповідні до тексту значення.
+
+Стаття 2 - Предмет.
+
+a.  Надання Ліцензії.
+    1.  Відповідно до умов та правил цієї Публічної Ліцензії, Ліцензіар надає Вам дійсну на території всього світу, безоплатну, без права видавати субліцензії, невиключну, безвідкличну ліцензію на здійснення Ліцензованих Прав стосовно Ліцензованого Матеріалу шляхом:
+        A.  відтворення і Поширення Ліцензованого Матеріалу, як в цілому, так і його частини; і
+        B.  створення, відтворення і Поширення Адаптованого Матеріалу.
+    2.  Винятки та Обмеження. Для уникнення непорозумінь, якщо Винятки та Обмеження застосовуються до Вашого використання, то ця Публічна Ліцензія не застосовується і Ви не зобов’язані дотримуватися її умов і правил.
+    3.  Строк. Строк дії цієї Публічної Ліцензії зазначено в Статті 6(a).
+    4.  Носії та формати; дозволені технічні модифікації. Ліцензіар дозволяє Вам здійснювати Ліцензовані Права стосовно будь-яких носіїв і форматів, як вже відомих, так і таких, що будуть створені у майбутньому, а також проводити необхідні для цього технічні модифікації. Ліцензіар відмовляється від та/або погоджується не використовувати будь-які права чи повноваження для заборони Вам проводити технологічні модифікації необхідні для здійснення Ліцензованих Прав, включаючи технічні модифікації, необхідні для обходу Технічних Засобів Захисту. У розумінні цієї Публічної Ліцензії здійснення модифікацій, дозволених цією Статтею 2(a)(4), саме по собі не є створенням Адаптованого Матеріалу.
+    5.  Наступні отримувачі (Downstream recipients).
+        A.   Оферта Ліцензіара – Ліцензований Матеріал. Кожний отримувач Ліцензованого Матеріалу автоматично отримує від Ліцензіара оферту здійснювати Ліцензовані Права на умовах та правилах цієї Публічної Ліцензії.
+        B.   Заборона подальших обмежень. Ви не можете пропонувати або накладати будь-які додаткові або інші умови чи правила на, або застосовувати будь-які Технічні Засоби Захисту стосовно Ліцензованого Матеріалу якщо такі дії обмежують можливість здійснення Ліцензованих Прав будь-яким отримувачем Ліцензованого Матеріалу.
+    6.   Відсутність схвалення і підтримки. Ніщо в цій Публічній Ліцензії не є, або не може вважатись дозволом стверджувати чи припускати, що Ви, або Ваше використання Ліцензованого Матеріалу, пов’язані з, спонсоровані, підтримані, або отримали офіційний статус від Ліцензіара або інших осіб, визначених як такі, що мають згадуватися як автори як зазначено в Статті 3(a)(1)(A)(i).
+b.  Інші права.
+    1.  Особисті немайнові права, такі як право на цілісність твору, не ліцензуються за цією Публічною Ліцензією, так само як права на недоторканість приватного життя і/або інші подібні особисті немайнові права; та, наскільки це можливо, Ліцензіар відмовляється від та/або погоджується не здійснювати будь-які такі належні Ліцензіару права в мірі, що необхідна для того, щоб дозволити Вам здійснювати Ліцензовані Права, але не іншим чином.
+    2.  Права на патенти і торговельні марки не ліцензуються за цією Публічною Ліцензією.
+    3.  Наскільки це можливо, Ліцензіар відмовляється від будь-якого права на отримання від Вас винагороди (роялті) за здійснення Ліцензованих Прав, як безпосередньо, так і через організацію колективного управління за добровільною, або законодавчо встановленою, з можливістю відмови від неї, або примусовою схемою ліцензування. В усіх інших випадках Ліцензіар залишає за собою будь-яке право отримувати таку винагороду (роялті).
+
+Стаття 3 – Умови Ліцензії.
+
+Здійснення Вами Ліцензованих Прав повинне відбуватись виключно за дотримання наступних умов.
+
+a.  Зазначення Авторства.
+    1.  Якщо Ви Поширюєте Ліцензований Матеріал (в тому числі у модифікованій формі), Ви повинні:
+
+        A.  зберегти наступне, якщо воно було надане Ліцензіаром з Ліцензованим Матеріалом:
+            i.  зазначення творця (-ів) Ліцензованого Матеріалу і будь-яких інших осіб, визначених як такі, що мають бути згадані, будь-яким розумним шляхом, визначеним Ліцензіаром (включаючи псевдонім, якщо такий обрано);
+            ii. повідомлення про авторське право;
+            iii. повідомлення стосовно цієї Публічної Ліцензії;
+            iv. повідомлення стосовно відмови від гарантій;
+            v.  Уніфікований Ідентифікатор Ресурсів або гіперпосилання на Ліцензований Матеріал, наскільки це розумно може бути здійснено;
+        B.  зазначити якщо Ви модифікували Ліцензований Матеріал і зберегти вказівки стосовно будь-яких попередніх модифікацій; і
+        C.  зазначити, що Ліцензований Матеріал ліцензується за цією Публічною Ліцензією, і надати її текст або Уніфікований Ідентифікатор Ресурсів або гіперпосилання на цю Публічну Ліцензію.
+
+    2.  Ви можете виконати умови Статті 3(a)(1) будь-яким розумним чином враховуючи носій, шляхи і умови, за яких Ви Поширюєте Ліцензований Матеріал. Наприклад, може бути розумно виконати такі умови шляхом зазначення Уніфікованого Ідентифікатора Ресурсів або гіперпосилання на ресурс, що містить необхідну інформацію.
+
+    3.  У разі наявності відповідної вимоги Ліцензіара, Ви повинні видалити будь-яку інформацію, визначену Статтею 3(a)(1)(A), наскільки це розумно можливо.
+
+    4.  Якщо Ви Поширюєте створюваний Вами Адаптований Матеріал, то Ліцензія на Адаптований Матеріал, котру Ви застосовуєте, не повинна унеможливлювати дотримання цієї Публічної Ліцензії отримувачами Адаптованого Матеріалу.
+
+Стаття 4 - Права Sui Generis на Бази Даних.
+
+Якщо Ліцензовані Права включають Права Sui Generis на Бази Даних, що застосовуються до використання Вами Ліцензованого Матеріалу:
+
+a.  для уникнення непорозумінь, Стаття 2(a)(1) надає Вам право вилучати, використовувати, відтворювати і Поширювати весь, або значну частину вмісту бази даних;
+b.  якщо Ви включаєте весь або значну частину вмісту бази даних до бази даних, на яку Ви маєте Права Sui Generis на Бази Даних, то база даних, на яку Ви маєте Права Sui Generis на Бази Даних (але не окремі частини її вмісту) є Адаптованим Матеріалом; і
+c.  Ви повинні виконувати умови Статті 3(a) якщо Ви Поширюєте весь або значну частину вмісту бази даних.
+
+Для уникнення непорозумінь, ця Стаття 4 , у разі, якщо Ліцензовані Права включають інші Авторське і Подібні Права, доповнює і не замінює собою Ваші обов’язки за цією Публічною Ліцензією.
+
+Стаття 5 – Відмова від Гарантій і Обмеження Відповідальності.
+
+a.  Якщо інше окремо не зазначено Ліцензіаром, то, наскільки це можливо, Ліцензіар надає Ліцензований Матеріал «як є» і «як доступний», і не надає жодних гарантій будь-якого роду стосовно Ліцензованого Матеріалу, як прямих, так і таких, що можуть матися на увазі, чи гарантій іншого роду. Це включає, але не обмежується: гарантії стосовно назви, придатності для продажу, придатності для певної мети, відсутності порушень прав, відсутності прихованих чи інших дефектів, точності, чи наявності або відсутності помилок, відомих чи таких, що можуть бути виявлені. У разі, якщо відмови від гарантій не дозволені повністю або частково, ця відмова від гарантій може не застосовуватись до Вас.
+b.  На скільки це можливо, ні за яких обставин Ліцензіар не буде відповідальний перед Вами з будь-яких правових підстав (включаючи, але не обмежуючись, недбалість) або якимось іншим чином за будь-які прямі, особливі, непрямі, випадкові, побічні, штрафні, чи інші витрати чи збитки, що виникли з цієї Публічної Ліцензії або використання Ліцензованого Матеріалу, навіть якщо Ліцензіар був повідомлений про можливість виникнення таких витрат чи збитків. Дане обмеження може не застосовуватись до Вас якщо обмеження відповідальності частково або повністю не дозволене законодавством.
+c.  Вищенаведена відмова від гарантій і обмеження відповідальності повинна тлумачитися таким чином, щоб, наскільки це можливо, найбільш точно відповідати повній відмові від будь-якої відповідальності Ліцензіара.
+
+Стаття 6 – Термін і припинення дії.
+
+a.  Ця Публічна Ліцензія діє протягом всього строку дії ліцензованих за нею Авторського і Подібних Прав. В той же час, якщо Ви не дотримаєтеся умов цієї Публічної Ліцензії, то Ваші права за цією Публічною Ліцензією автоматично припиняють діяти.
+
+b.  Якщо ваше право використовувати Ліцензований Матеріал було припинене згідно Статті 6(a), воно поновлюється:
+
+    1.  автоматично в день усунення порушення, за умови, що таке порушення усунене протягом 30 днів з моменту, коли Ви дізнались про нього; або
+    2.  після окремого поновлення Ліцензіаром.
+
+    Для уникнення непорозумінь, ця Стаття 6(b) не обмежує права Ліцензіара звернутися до судових органів для захисту своїх прав у зв’язку з Вашими порушеннями умов цієї Публічної Ліцензії.
+
+c.  Для уникнення непорозумінь, Ліцензіар має право також пропонувати Ліцензований Матеріал на інших умовах чи правилах, або припинити розповсюджувати Ліцензований Матеріал в будь-який час; в той же час, такі його дії не припиняють дії цієї Публічної Ліцензії.
+
+d.  Статті 1, 5, 6, 7 і 8 продовжують діяти і після припинення дії цієї Публічної Ліцензії.
+
+Стаття 7 — Інші правила та умови.
+
+a.  Ліцензіар не повинен бути зв'язаним жодними додатковими або іншими правилами чи умовами, доведеними Вами до його відома, якщо вони не були чітко окремо узгоджені.
+b.  Будь-які домовленості, заяви чи угоди щодо Ліцензованого Матеріалу, не вказані тут, є відокремленими і не залежними від умов та правил цієї Публічної Ліцензії.
+
+Стаття 8 — Тлумачення.
+
+a.  Щоб уникнути непорозумінь, ця Публічна Ліцензія не може бути витлумачена у спосіб, який обмежує, забороняє або накладає інші умови на будь-яке використання Ліцензованого Матеріалу, яке може бути законно здійснене без дозволу згідно цієї Публічної Ліцензії.
+b.  Наскільки це можливо, якщо будь-яке положення цієї Публічної Ліцензії вважається таким, що не має законної сили, воно повинне бути автоматично зміненим у мірі, мінімально необхідній для того, щоб це положення набуло законної сили. Якщо це положення не може бути зміненим, воно повинне бути виключеним з цієї Публічної Ліцензії, не впливаючи на законну силу та інші умови та правила цієї Публічної Ліцензії.
+c.  Не можна відмовитися від будь-якого правила або умови цієї Публічної Ліцензії, і жодне невиконання не може бути прийнятним, якщо це не було чітко узгоджено з Ліцензіаром.
+d.  Ніщо в цій Публічній Ліцензії не є і не може бути витлумачено як обмеження, або відмова від будь-яких привілеїв та імунітетів, які застосовуються до Ліцензіара або до Вас, включно з процесуальними, у будь-якій юрисдикції.
+
+
+=======================================================================
+ENGLISH
+=======================================================================
+
+Attribution 4.0 International
+
+=======================================================================
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and
+does not provide legal services or legal advice. Distribution of
+Creative Commons public licenses does not create a lawyer-client or
+other relationship. Creative Commons makes its licenses and related
+information available on an "as-is" basis. Creative Commons gives no
+warranties regarding its licenses, any material licensed under their
+terms and conditions, or any related information. Creative Commons
+disclaims all liability for damages resulting from their use to the
+fullest extent possible.
+
+Using Creative Commons Public Licenses
+
+Creative Commons public licenses provide a standard set of terms and
+conditions that creators and other rights holders may use to share
+original works of authorship and other material subject to copyright
+and certain other rights specified in the public license below. The
+following considerations are for informational purposes only, are not
+exhaustive, and do not form part of our licenses.
+
+     Considerations for licensors: Our public licenses are
+     intended for use by those authorized to give the public
+     permission to use material in ways otherwise restricted by
+     copyright and certain other rights. Our licenses are
+     irrevocable. Licensors should read and understand the terms
+     and conditions of the license they choose before applying it.
+     Licensors should also secure all rights necessary before
+     applying our licenses so that the public can reuse the
+     material as expected. Licensors should clearly mark any
+     material not subject to the license. This includes other CC-
+     licensed material, or material used under an exception or
+     limitation to copyright. More considerations for licensors:
+    wiki.creativecommons.org/Considerations_for_licensors
+
+     Considerations for the public: By using one of our public
+     licenses, a licensor grants the public permission to use the
+     licensed material under specified terms and conditions. If
+     the licensor's permission is not necessary for any reason--for
+     example, because of any applicable exception or limitation to
+     copyright--then that use is not regulated by the license. Our
+     licenses grant only permissions under copyright and certain
+     other rights that a licensor has authority to grant. Use of
+     the licensed material may still be restricted for other
+     reasons, including because others have copyright or other
+     rights in the material. A licensor may make special requests,
+     such as asking that all changes be marked or described.
+     Although not required by our licenses, you are encouraged to
+     respect those requests where reasonable. More considerations
+     for the public:
+    wiki.creativecommons.org/Considerations_for_licensees
+
+=======================================================================
+
+Creative Commons Attribution 4.0 International Public License
+
+By exercising the Licensed Rights (defined below), You accept and agree
+to be bound by the terms and conditions of this Creative Commons
+Attribution 4.0 International Public License ("Public License"). To the
+extent this Public License may be interpreted as a contract, You are
+granted the Licensed Rights in consideration of Your acceptance of
+these terms and conditions, and the Licensor grants You such rights in
+consideration of benefits the Licensor receives from making the
+Licensed Material available under these terms and conditions.
+
+
+Section 1 -- Definitions.
+
+  a. Adapted Material means material subject to Copyright and Similar
+     Rights that is derived from or based upon the Licensed Material
+     and in which the Licensed Material is translated, altered,
+     arranged, transformed, or otherwise modified in a manner requiring
+     permission under the Copyright and Similar Rights held by the
+     Licensor. For purposes of this Public License, where the Licensed
+     Material is a musical work, performance, or sound recording,
+     Adapted Material is always produced where the Licensed Material is
+     synched in timed relation with a moving image.
+
+  b. Adapter's License means the license You apply to Your Copyright
+     and Similar Rights in Your contributions to Adapted Material in
+     accordance with the terms and conditions of this Public License.
+
+  c. Copyright and Similar Rights means copyright and/or similar rights
+     closely related to copyright including, without limitation,
+     performance, broadcast, sound recording, and Sui Generis Database
+     Rights, without regard to how the rights are labeled or
+     categorized. For purposes of this Public License, the rights
+     specified in Section 2(b)(1)-(2) are not Copyright and Similar
+     Rights.
+
+  d. Effective Technological Measures means those measures that, in the
+     absence of proper authority, may not be circumvented under laws
+     fulfilling obligations under Article 11 of the WIPO Copyright
+     Treaty adopted on December 20, 1996, and/or similar international
+     agreements.
+
+  e. Exceptions and Limitations means fair use, fair dealing, and/or
+     any other exception or limitation to Copyright and Similar Rights
+     that applies to Your use of the Licensed Material.
+
+  f. Licensed Material means the artistic or literary work, database,
+     or other material to which the Licensor applied this Public
+     License.
+
+  g. Licensed Rights means the rights granted to You subject to the
+     terms and conditions of this Public License, which are limited to
+     all Copyright and Similar Rights that apply to Your use of the
+     Licensed Material and that the Licensor has authority to license.
+
+  h. Licensor means the individual(s) or entity(ies) granting rights
+     under this Public License.
+
+  i. Share means to provide material to the public by any means or
+     process that requires permission under the Licensed Rights, such
+     as reproduction, public display, public performance, distribution,
+     dissemination, communication, or importation, and to make material
+     available to the public including in ways that members of the
+     public may access the material from a place and at a time
+     individually chosen by them.
+
+  j. Sui Generis Database Rights means rights other than copyright
+     resulting from Directive 96/9/EC of the European Parliament and of
+     the Council of 11 March 1996 on the legal protection of databases,
+     as amended and/or succeeded, as well as other essentially
+     equivalent rights anywhere in the world.
+
+  k. You means the individual or entity exercising the Licensed Rights
+     under this Public License. Your has a corresponding meaning.
+
+
+Section 2 -- Scope.
+
+  a. License grant.
+
+       1. Subject to the terms and conditions of this Public License,
+          the Licensor hereby grants You a worldwide, royalty-free,
+          non-sublicensable, non-exclusive, irrevocable license to
+          exercise the Licensed Rights in the Licensed Material to:
+
+            a. reproduce and Share the Licensed Material, in whole or
+               in part; and
+
+            b. produce, reproduce, and Share Adapted Material.
+
+       2. Exceptions and Limitations. For the avoidance of doubt, where
+          Exceptions and Limitations apply to Your use, this Public
+          License does not apply, and You do not need to comply with
+          its terms and conditions.
+
+       3. Term. The term of this Public License is specified in Section
+          6(a).
+
+       4. Media and formats; technical modifications allowed. The
+          Licensor authorizes You to exercise the Licensed Rights in
+          all media and formats whether now known or hereafter created,
+          and to make technical modifications necessary to do so. The
+          Licensor waives and/or agrees not to assert any right or
+          authority to forbid You from making technical modifications
+          necessary to exercise the Licensed Rights, including
+          technical modifications necessary to circumvent Effective
+          Technological Measures. For purposes of this Public License,
+          simply making modifications authorized by this Section 2(a)
+          (4) never produces Adapted Material.
+
+       5. Downstream recipients.
+
+            a. Offer from the Licensor -- Licensed Material. Every
+               recipient of the Licensed Material automatically
+               receives an offer from the Licensor to exercise the
+               Licensed Rights under the terms and conditions of this
+               Public License.
+
+            b. No downstream restrictions. You may not offer or impose
+               any additional or different terms or conditions on, or
+               apply any Effective Technological Measures to, the
+               Licensed Material if doing so restricts exercise of the
+               Licensed Rights by any recipient of the Licensed
+               Material.
+
+       6. No endorsement. Nothing in this Public License constitutes or
+          may be construed as permission to assert or imply that You
+          are, or that Your use of the Licensed Material is, connected
+          with, or sponsored, endorsed, or granted official status by,
+          the Licensor or others designated to receive attribution as
+          provided in Section 3(a)(1)(A)(i).
+
+  b. Other rights.
+
+       1. Moral rights, such as the right of integrity, are not
+          licensed under this Public License, nor are publicity,
+          privacy, and/or other similar personality rights; however, to
+          the extent possible, the Licensor waives and/or agrees not to
+          assert any such rights held by the Licensor to the limited
+          extent necessary to allow You to exercise the Licensed
+          Rights, but not otherwise.
+
+       2. Patent and trademark rights are not licensed under this
+          Public License.
+
+       3. To the extent possible, the Licensor waives any right to
+          collect royalties from You for the exercise of the Licensed
+          Rights, whether directly or through a collecting society
+          under any voluntary or waivable statutory or compulsory
+          licensing scheme. In all other cases the Licensor expressly
+          reserves any right to collect such royalties.
+
+
+Section 3 -- License Conditions.
+
+Your exercise of the Licensed Rights is expressly made subject to the
+following conditions.
+
+  a. Attribution.
+
+       1. If You Share the Licensed Material (including in modified
+          form), You must:
+
+            a. retain the following if it is supplied by the Licensor
+               with the Licensed Material:
+
+                 i. identification of the creator(s) of the Licensed
+                    Material and any others designated to receive
+                    attribution, in any reasonable manner requested by
+                    the Licensor (including by pseudonym if
+                    designated);
+
+                ii. a copyright notice;
+
+               iii. a notice that refers to this Public License;
+
+                iv. a notice that refers to the disclaimer of
+                    warranties;
+
+                 v. a URI or hyperlink to the Licensed Material to the
+                    extent reasonably practicable;
+
+            b. indicate if You modified the Licensed Material and
+               retain an indication of any previous modifications; and
+
+            c. indicate the Licensed Material is licensed under this
+               Public License, and include the text of, or the URI or
+               hyperlink to, this Public License.
+
+       2. You may satisfy the conditions in Section 3(a)(1) in any
+          reasonable manner based on the medium, means, and context in
+          which You Share the Licensed Material. For example, it may be
+          reasonable to satisfy the conditions by providing a URI or
+          hyperlink to a resource that includes the required
+          information.
+
+       3. If requested by the Licensor, You must remove any of the
+          information required by Section 3(a)(1)(A) to the extent
+          reasonably practicable.
+
+       4. If You Share Adapted Material You produce, the Adapter's
+          License You apply must not prevent recipients of the Adapted
+          Material from complying with this Public License.
+
+
+Section 4 -- Sui Generis Database Rights.
+
+Where the Licensed Rights include Sui Generis Database Rights that
+apply to Your use of the Licensed Material:
+
+  a. for the avoidance of doubt, Section 2(a)(1) grants You the right
+     to extract, reuse, reproduce, and Share all or a substantial
+     portion of the contents of the database;
+
+  b. if You include all or a substantial portion of the database
+     contents in a database in which You have Sui Generis Database
+     Rights, then the database in which You have Sui Generis Database
+     Rights (but not its individual contents) is Adapted Material; and
+
+  c. You must comply with the conditions in Section 3(a) if You Share
+     all or a substantial portion of the contents of the database.
+
+For the avoidance of doubt, this Section 4 supplements and does not
+replace Your obligations under this Public License where the Licensed
+Rights include other Copyright and Similar Rights.
+
+
+Section 5 -- Disclaimer of Warranties and Limitation of Liability.
+
+  a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE
+     EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS
+     AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF
+     ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS,
+     IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION,
+     WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR
+     PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,
+     ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT
+     KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT
+     ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.
+
+  b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE
+     TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION,
+     NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT,
+     INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES,
+     COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR
+     USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN
+     ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR
+     DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR
+     IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.
+
+  c. The disclaimer of warranties and limitation of liability provided
+     above shall be interpreted in a manner that, to the extent
+     possible, most closely approximates an absolute disclaimer and
+     waiver of all liability.
+
+
+Section 6 -- Term and Termination.
+
+  a. This Public License applies for the term of the Copyright and
+     Similar Rights licensed here. However, if You fail to comply with
+     this Public License, then Your rights under this Public License
+     terminate automatically.
+
+  b. Where Your right to use the Licensed Material has terminated under
+     Section 6(a), it reinstates:
+
+       1. automatically as of the date the violation is cured, provided
+          it is cured within 30 days of Your discovery of the
+          violation; or
+
+       2. upon express reinstatement by the Licensor.
+
+     For the avoidance of doubt, this Section 6(b) does not affect any
+     right the Licensor may have to seek remedies for Your violations
+     of this Public License.
+
+  c. For the avoidance of doubt, the Licensor may also offer the
+     Licensed Material under separate terms or conditions or stop
+     distributing the Licensed Material at any time; however, doing so
+     will not terminate this Public License.
+
+  d. Sections 1, 5, 6, 7, and 8 survive termination of this Public
+     License.
+
+
+Section 7 -- Other Terms and Conditions.
+
+  a. The Licensor shall not be bound by any additional or different
+     terms or conditions communicated by You unless expressly agreed.
+
+  b. Any arrangements, understandings, or agreements regarding the
+     Licensed Material not stated herein are separate from and
+     independent of the terms and conditions of this Public License.
+
+
+Section 8 -- Interpretation.
+
+  a. For the avoidance of doubt, this Public License does not, and
+     shall not be interpreted to, reduce, limit, restrict, or impose
+     conditions on any use of the Licensed Material that could lawfully
+     be made without permission under this Public License.
+
+  b. To the extent possible, if any provision of this Public License is
+     deemed unenforceable, it shall be automatically reformed to the
+     minimum extent necessary to make it enforceable. If the provision
+     cannot be reformed, it shall be severed from this Public License
+     without affecting the enforceability of the remaining terms and
+     conditions.
+
+  c. No term or condition of this Public License will be waived and no
+     failure to comply consented to unless expressly agreed to by the
+     Licensor.
+
+  d. Nothing in this Public License constitutes or may be interpreted
+     as a limitation upon, or waiver of, any privileges and immunities
+     that apply to the Licensor or You, including from the legal
+     processes of any jurisdiction or authority.
+
+
+=======================================================================
+
+Creative Commons is not a party to its public
+licenses. Notwithstanding, Creative Commons may elect to apply one of
+its public licenses to material it publishes and in those instances
+will be considered the “Licensor.” The text of the Creative Commons
+public licenses is dedicated to the public domain under the CC0 Public
+Domain Dedication. Except for the limited purpose of indicating that
+material is shared under a Creative Commons public license or as
+otherwise permitted by the Creative Commons policies published at
+creativecommons.org/policies, Creative Commons does not authorize the
+use of the trademark "Creative Commons" or any other trademark or logo
+of Creative Commons without its prior written consent including,
+without limitation, in connection with any unauthorized modifications
+to any of its public licenses or any other arrangements,
+understandings, or agreements concerning use of licensed material. For
+the avoidance of doubt, this paragraph does not form part of the
+public licenses.
+
+Creative Commons may be contacted at creativecommons.org.
+

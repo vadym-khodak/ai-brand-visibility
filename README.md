@@ -78,10 +78,13 @@ python validate_clarify.py full-report
 
 ## Ліцензії
 
-- Код — MIT (`LICENSE`).
-- Дані, створені в межах дослідження (запити, словник, розмітка, обчислені таблиці), — CC BY 4.0.
-- Тексти відповідей генеративних систем наведено для дослідницького аналізу. Права на них визначають умови відповідних сервісів.
-- Ринкові дані належать їхнім джерелам: Національний банк України (bank.gov.ua), RetailersUA / SimilarWeb.
+| Що | Ліцензія | Файл |
+|---|---|---|
+| Код | MIT | `LICENSE` — англійський оригінал і український переклад |
+| Дані, створені в межах дослідження (запити, словник, розмітка, зведені набори, обчислені таблиці) | CC BY 4.0 | `data/LICENSE` — сфера дії двома мовами, офіційний український переклад і англійський оригінал юридичного тексту |
+
+- Тексти відповідей генеративних систем ліцензуються лише в межах прав автора; їх використання регулюють також умови відповідних сервісів.
+- Ринкові дані належать їхнім джерелам — Національному банку України (bank.gov.ua) і RetailersUA / SimilarWeb — і ліцензією не охоплюються.
 
 ## Цитування
 
@@ -103,4 +106,4 @@ What is included:
 
 `revision_stats.py` and `round3_stats.py` reproduce all numbers, tables and figures in the article. The analysis needs no API key.
 
-Code is licensed under MIT and research-generated data under CC BY 4.0. Model outputs are subject to their providers' terms.
+Licenses: code under MIT (`LICENSE`, English original with a Ukrainian translation); research-generated data under CC BY 4.0 (`data/LICENSE`, scope in both languages, the official Ukrainian translation and the English legal code). Model outputs are subject to their providers' terms; market data belong to their sources.

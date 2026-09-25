@@ -8,7 +8,9 @@ authors:
     orcid: "https://orcid.org/0009-0008-9469-3341"
 date-released: 2026-09-25
 version: "1.0.0"
-license: MIT
+license:
+  - MIT
+  - CC-BY-4.0
 keywords:
   - generative engine optimization
   - brand visibility
