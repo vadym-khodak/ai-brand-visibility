@@ -122,7 +122,7 @@ python code_intents.py
 
 ## Цитування
 
-Набір даних: Ходак В. В. Visibility of Ukrainian brands in generative AI answers: audit data and code : набір даних. Zenodo, 2026. DOI: [10.5281/zenodo.22957279](https://doi.org/10.5281/zenodo.22957279) (DOI усіх версій; окремі версії мають власні DOI, наприклад v1.1.0 — 10.5281/zenodo.22957280). Див. також `CITATION.cff`. Після публікації статті тут з'явиться її бібліографічний опис.
+Набір даних: Ходак В. В. Visibility of Ukrainian brands in generative AI answers: audit data and code : набір даних. Zenodo, 2026. DOI: [10.5281/zenodo.22957279](https://doi.org/10.5281/zenodo.22957279) (DOI усіх версій; окремі версії мають власні DOI: v1.2.0 — [10.5281/zenodo.22959764](https://doi.org/10.5281/zenodo.22959764), v1.1.0 — [10.5281/zenodo.22957280](https://doi.org/10.5281/zenodo.22957280)). Див. також `CITATION.cff`. Після публікації статті тут з'явиться її бібліографічний опис.
 
 ---
 
